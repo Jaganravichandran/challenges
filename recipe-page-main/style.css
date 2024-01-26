@@ -235,6 +235,8 @@ h2 {
 
 /* nutrition div End */
 
+/* media query start*/
+
 @media (min-width: 950px) {
   body {
     display: flex;
@@ -283,7 +285,7 @@ h2 {
   }
 }
 
-/* media query start*/
+/* media query end*/
 
 /* footer */
 
