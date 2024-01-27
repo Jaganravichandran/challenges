@@ -1,0 +1,171 @@
+/* root */
+
+:root {
+  /* color */
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-pink: hsl(275, 100%, 97%);
+  --clr-grayish-purple: hsl(292, 16%, 49%);
+  --clr-dark-purple: hsl(292, 83%, 47%);
+
+  /* typography */
+
+  --fs-paragraph: 16px;
+
+  /* font family */
+
+  --font-family: "Work Sans", sans-serif;
+
+  /* font weight */
+
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--clr-light-pink);
+  background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+p {
+  color: var(--clr-grayish-purple);
+  display: none;
+  padding-bottom: 1.5rem;
+}
+
+h3:hover {
+  color: var(--clr-dark-purple);
+  cursor: pointer;
+}
+
+.button {
+  border-bottom: 1px solid var(--clr-light-pink);
+}
+
+.button img {
+  width: 32px;
+}
+
+.button-1 img {
+  width: 32px;
+}
+
+.header {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header img {
+  width: 25px;
+}
+
+.container {
+  width: 25em;
+  background-color: var(--clr-white);
+  padding: 2rem 2rem 0;
+  margin: 2rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 1px 2px 3px var(--clr-grayish-purple);
+}
+
+.flex-container {
+  display: flex;
+  margin: 1.5rem 0;
+  gap: 1rem;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.flex-container-1 {
+  display: flex;
+  margin: 1.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+}
+
+/* media query */
+@media (min-width: 550px) and (max-width: 799px) {
+  body {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 30em;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 949px) {
+  body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 35em;
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    width: 40em;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-container-1 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* media query end */
+
+/* footer starts */
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  padding: 2rem 0;
+}
+.attribution a {
+  color: hsl(286, 97%, 74%);
+}
+
+/* footer end */
+
+/* challenge completed */
