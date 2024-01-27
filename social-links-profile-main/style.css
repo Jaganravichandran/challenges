@@ -1,0 +1,140 @@
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: var(--neutral-white);
+  padding: 1rem;
+}
+.attribution a {
+  color: var(--clr-primary);
+}
+
+/* root */
+
+:root {
+  /* primary color */
+
+  --clr-primary: hsl(75, 94%, 57%);
+
+  /* neutral colors */
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-drakgrey: hsl(0, 0%, 12%);
+  --neutral-offblack: hsl(0, 0%, 8%);
+
+  /* typography */
+
+  --fs-paragraph: 14px;
+
+  /* font family */
+
+  --ff-main: "Inter", sans-serif;
+}
+
+/* css reset */
+
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--neutral-offblack);
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container {
+  background-color: var(--neutral-drakgrey);
+  margin: 2rem;
+  padding: 0 0.5rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.image,
+.heading,
+.heading-2,
+.link {
+  text-align: center;
+}
+
+.heading {
+  padding-bottom: 2rem;
+}
+
+.heading-2 {
+  padding: 0 1.5rem;
+}
+
+.heading-2 p {
+  color: var(--neutral-white);
+  font-weight: 100;
+  padding: 0 0.5rem;
+}
+
+.heading h2 {
+  color: var(--neutral-white);
+  font-weight: 700;
+  padding-bottom: 0.7rem;
+}
+
+.heading p {
+  color: var(--clr-primary);
+  font-size: var(--fs-paragraph);
+  font-weight: 600;
+}
+
+.image {
+  padding: 2rem;
+}
+
+.link {
+  background-color: var(--neutral-grey);
+  margin: 1.5rem 1rem;
+  padding: 0.9rem;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.link p {
+  color: var(--neutral-white);
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--neutral-white);
+  font-weight: 700;
+}
+
+.link:hover,
+.link p:hover {
+  background-color: var(--clr-primary);
+  color: var(--neutral-offblack);
+}
+
+/* challenge completed */
