@@ -1,0 +1,228 @@
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+/* root */
+
+:root {
+  /* colors-primary */
+
+  --clr-primary-red: hsl(1, 90%, 64%);
+  --clr-primary-blue: hsl(219, 85%, 26%);
+
+  /* Neutral colors */
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-very-light-grayish-blue: hsl(210, 60%, 98%);
+  --neutral-light-grayish-blue-1: hsl(211, 68%, 94%);
+  --neutral-light-grayish-blue-2: hsl(205, 33%, 90%);
+  --neutral-grayish-blue: hsl(219, 14%, 63%);
+  --neutral-dark-grayish-blue: hsl(219, 12%, 42%);
+  --neutral-very-dark-blue: hsl(224, 21%, 14%);
+
+  /* typography */
+
+  /* font size */
+
+  --fs-paragraph: 16px;
+
+  /* font family */
+
+  --font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* reset  */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* utility classes  */
+
+img {
+  width: 40px;
+}
+
+.name {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  padding-right: 0.2rem;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--neutral-very-light-grayish-blue);
+  font-size: var(--fs-paragraph);
+  min-height: 100vh;
+  /* width: 100%; */
+}
+
+.container {
+  padding: 1.5rem 1rem;
+  background-color: var(--neutral-white);
+}
+
+/* header starts */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 1.5rem;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.three {
+  background-color: var(--clr-primary-blue);
+  color: var(--neutral-white);
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.header-right {
+  color: var(--neutral-dark-grayish-blue);
+}
+
+/* header ends */
+
+/* main starts */
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  gap: 1rem;
+  background-color: var(--neutral-light-grayish-blue-1);
+  margin: 0.8rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.profile-bg {
+  background-color: transparent;
+}
+
+.flex-1 {
+  position: absolute;
+  top: 13.4%;
+  left: 65%;
+}
+.flex-2 {
+  position: absolute;
+  top: 23.2%;
+  left: 65%;
+}
+.flex-3 {
+  position: absolute;
+  top: 35%;
+  left: 41%;
+}
+
+.point::after {
+  content: "";
+  background-color: var(--clr-primary-red);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+p {
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.highlight {
+  font-weight: 600;
+  padding-right: 0.2rem;
+}
+.followed {
+  padding-right: 0.2rem;
+}
+
+.time {
+  color: var(--neutral-grayish-blue);
+}
+
+.chess-club {
+  color: var(--clr-primary-blue) !important;
+  font-weight: 600;
+}
+.person-3 .chess-club {
+  padding: 0 0.2rem;
+}
+.person-7 .chess-club {
+  padding: 0 0.4rem;
+}
+
+.private-message {
+  margin: 0.5rem 0 0;
+  padding: 1rem;
+  border: 1px solid var(--neutral-light-grayish-blue-1);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.person-5 .person-messages {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* main ends */
+
+/* media query */
+
+@media (min-width: 720px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 43em;
+    box-shadow: 0.2px 0.2px 10px 1px var(--neutral-light-grayish-blue-1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+}
+
+/* media query ends */
+
+/*  */
+
+/* challenge completed */
+
+/*  */
