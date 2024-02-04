@@ -9,7 +9,7 @@
 
   /* typography */
 
-  --font-size: 16 px;
+  --font-size: 18 px;
 
   /* font family */
 
@@ -201,7 +201,7 @@ a {
   padding: 0.8rem 1.5rem;
   width: 100%;
   font-family: var(--font-family);
-  font-size: 15px;
+  font-size: 16px;
   background: transparent;
   color: var(--neutral-grey);
   cursor: pointer;
@@ -305,6 +305,7 @@ a {
   }
   .nav-items li {
     font-size: 14px;
+    font-weight: var(--fw-regular);
   }
   .buttons {
     display: flex;
@@ -314,7 +315,7 @@ a {
   }
 
   .buttons button {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .main-container {
@@ -322,8 +323,8 @@ a {
     flex-direction: row;
     /* gap: 5rem; */
     width: 80%;
-    height: 70%;
-    margin: 1.5rem auto 2.5rem;
+    /* height: 70%; */
+    margin: 1.5rem auto 4rem;
   }
   .hero-image {
     width: 40%;
@@ -374,7 +375,7 @@ a {
     flex-direction: column;
     padding: 1rem 0 0;
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 6%;
     background: var(--neutral-white);
     box-shadow: 2px 2px 20px 2px;
@@ -395,7 +396,7 @@ a {
     flex-direction: column;
     padding: 1rem 0 0;
     position: fixed;
-    top: 7%;
+    top: 8%;
     left: 20%;
     background: var(--neutral-white);
     box-shadow: 2px 2px 20px 2px;
@@ -410,6 +411,14 @@ a {
   }
 }
 
+@media (min-width: 1351px) and (max-width: 1800px) {
+  .nav-arrow-1 {
+    left: 6%;
+  }
+  .nav-arrow-2 {
+    left: 20%;
+  }
+}
 @media (min-width: 1101px) and (max-width: 1350px) {
   .nav-arrow-1 {
     left: 6%;
@@ -432,7 +441,7 @@ a {
 .attribution {
   background-color: black;
   color: var(--neutral-white);
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   padding: 2rem 1rem;
   margin-top: 1rem;
